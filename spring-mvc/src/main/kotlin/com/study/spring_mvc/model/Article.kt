@@ -42,3 +42,5 @@ open class BaseEntity(
         return "createdAt=$createdAt, updatedAt=$updatedAt"
     }
 }
+
+

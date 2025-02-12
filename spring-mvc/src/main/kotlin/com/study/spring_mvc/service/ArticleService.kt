@@ -2,14 +2,14 @@ package com.study.spring_mvc.service
 
 import com.study.spring_mvc.exception.NoArticleFound
 import com.study.spring_mvc.model.Article
-import com.study.spring_mvc.repository.AticleRepository
+import com.study.spring_mvc.repository.ArticleRepository
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
 @Service
 class ArticleService(
-    private val repository: AticleRepository,
+    private val repository: ArticleRepository,
 ) {
 
     fun get(id:Long):Article =
@@ -58,3 +58,5 @@ data class ReqUpdate(
     val body : String? = null,
     val authorId: Long? = null
 )
+
+
